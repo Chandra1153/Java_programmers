@@ -5,11 +5,11 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
 
-        for(int i = 0; i < a.length(); i++) {
-            if (Character.isUpperCase(a.charAt(i)))
-                System.out.print((char)((int) a.charAt(i) + 32));
+        for(Character c : a.toCharArray()) {
+            if (Character.isUpperCase(c))
+                System.out.print(Character.toLowerCase(c));
             else
-                System.out.print((char)((int) a.charAt(i) - 32));
+                System.out.print(Character.toUpperCase(c));
         }
     }
 }
