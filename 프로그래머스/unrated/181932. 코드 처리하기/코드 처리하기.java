@@ -1,6 +1,6 @@
 class Solution {
     public String solution(String code) {
-        int idx = 0, mode = 0;
+        int mode = 0;
         String ret = "";
 
         for(int i = 0; i < code.length(); i++) {
